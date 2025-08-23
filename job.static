@@ -4,7 +4,7 @@
 #SBATCH -J static
 #SBATCH --ntasks=32 --cpus-per-task=6
 #SBATCH -t 00:59:00
-#SBATCH --output=static_%j.log
+#SBATCH --output=log.job.static
 #SBATCH -A rtrr
 #SBATCH --exclusive
 
@@ -12,6 +12,7 @@ time1=$(date '+%s')
 echo "Job Started: $(date). Job Id:  $SLURM_JOBID"
 echo " "
 
+cd /scratch3/BMC/wrfruc/gge/arps/mesh_generation
 
 module purge
 module use /scratch3/BMC/wrfruc/gge/rrfs2/rrfs_hour/rrfs-workflow.20250731/modulefiles
