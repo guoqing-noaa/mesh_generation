@@ -1,0 +1,5 @@
+*
+!.gitignore
+!namelist.init_atmosphere
+!streams.init_atmosphere
+!job.static

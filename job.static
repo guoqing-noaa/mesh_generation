@@ -1,0 +1,26 @@
+#!/bin/sh -l
+#SBATCH --partition=u1-compute
+#SBATCH -q batch
+#SBATCH -J static
+#SBATCH --ntasks=32 --cpus-per-task=6
+#SBATCH -t 00:59:00
+#SBATCH --output=static_%j.log
+#SBATCH -A rtrr
+#SBATCH --exclusive
+
+time1=$(date '+%s')
+echo "Job Started: $(date). Job Id:  $SLURM_JOBID"
+echo " "
+
+
+module purge
+module use /scratch3/BMC/wrfruc/gge/rrfs2/rrfs_hour/rrfs-workflow.20250731/modulefiles
+module load rrfs/ursa
+module list
+
+ulimit -s unlimited
+
+srun ./init_atmosphere_model.x
+
+echo -n "Job   Ended: $(date). "
+echo " "
