@@ -49,8 +49,8 @@ begin
   ;
   ; Center latitude and longitude
   ;
-  cenlat = 38.0
-  cenlon =-123.0
+  cenlat = 40.0
+  cenlon =-135.0
  
 
   ;
@@ -64,7 +64,7 @@ begin
   ;
   ; Get the name of the file containing the static information from the GNAME environment variable
   ;
-  gname = getenv("GNAME")
+  gname = "ar3.5km.static.nc" ;getenv("GNAME")
   g = addfile(gname,"r")
 
   ;
