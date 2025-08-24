@@ -2,7 +2,7 @@
 #SBATCH --partition=u1-compute
 #SBATCH -q batch
 #SBATCH -J static
-#SBATCH --ntasks=32 --cpus-per-task=6
+#SBATCH --ntasks=32
 #SBATCH -t 00:59:00
 #SBATCH --output=log.job.static
 #SBATCH -A rtrr
@@ -21,6 +21,7 @@ module list
 
 ulimit -s unlimited
 
+#srun -n 1 ./init_atmosphere_model.x
 srun ./init_atmosphere_model.x
 
 echo -n "Job   Ended: $(date). "

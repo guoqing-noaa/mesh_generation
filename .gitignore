@@ -1,7 +1,7 @@
 *
 !.gitignore
-!namelist.init_atmosphere
-!streams.init_atmosphere
+!namelist.init_atmosphere.*
+!streams.init_atmosphere.*
 !job.static
 !ar3.5km.pts
 !regional_terrain.ncl
