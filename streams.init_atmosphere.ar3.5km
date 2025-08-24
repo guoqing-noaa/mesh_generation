@@ -8,6 +8,7 @@
                   type="output"
                   filename_template="ar3.5km.static.nc"
                   packages="initial_conds"
+                  clobber_mode="replace_files"
                   output_interval="initial_only" />
 
 </streams>
