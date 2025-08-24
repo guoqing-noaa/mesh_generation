@@ -1,12 +1,12 @@
 <streams>
 <immutable_stream name="input"
                   type="input"
-                  filename_template="ar3.5kmBig.grid.nc"
+                  filename_template="ar3.5km.grid.nc"
                   input_interval="initial_only" />
 
 <immutable_stream name="output"
                   type="output"
-                  filename_template="ar3.5kmBig.static.nc"
+                  filename_template="ar3.5km.static.nc"
                   packages="initial_conds"
                   output_interval="initial_only" />
 
