@@ -1,15 +1,15 @@
 &mesh
   cell_spacing_km  = 3.5
-  mesh_length_x_km = 6600,
-  mesh_length_y_km = 5000,
-  earth_radius_km  = 6370.0,
+  mesh_length_x_km = 6000,
+  mesh_length_y_km = 4800,
+  earth_radius_km  = 6378.14,
 /
 &projection
   projection_type = "lambert_conformal",
 /
 &lambert_conformal
-  reference_longitude_degrees = -135.0
-  standard_longitude_degrees = -135.0
+  reference_longitude_degrees = -135.5
+  standard_longitude_degrees = -135.5
   reference_latitude_degrees  = 40.0,
   standard_parallel_1_degrees = 35.0,
   standard_parallel_2_degrees = 45.0,
