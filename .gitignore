@@ -7,3 +7,4 @@
 !regional_terrain.ncl
 !mpas*.rgb
 !namelist.projections.*
+!namelist.grid_rotate*
